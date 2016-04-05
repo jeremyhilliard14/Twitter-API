@@ -12,7 +12,7 @@
 
 	<div id="twitter-wrapper" class="container">
 
-		<div id="header" class="row" style="background: #57c6f9;" style="background-width: 100%;">
+		<div id="header" class="row" style="background: #57c6f9;">
 
 			<div id="trump-pic" class="col-sm-3">
 				<a href="#"><img src="css/trump.jpeg"></a>
@@ -29,9 +29,9 @@
 
 		<div id="more-tweets" class="row"></div>
 
-		<div id="tweets" class="row">
-			<div class="col-sm-12" ng-repeat="tweet in data">{{tweet.text}} -- {{tweet.user.name}} -- {{tweet.sinceTweeted}} in seconds
-				<img ng-src="{{tweet.user.profile_banner_url}}" />
+		<div class="row">
+			<div id="tweets" class="col-sm-12" ng-repeat="tweet in data"ng-style="{'background-image': 'url(' + tweet.user.profile_banner_url + ')'}" style="height': 250px;">{{tweet.text}} -- {{tweet.user.name}} -- {{tweet.sinceTweeted}} in seconds
+				<!-- <img ng-src="{{tweet.user.profile_banner_url}}" /> -->
 			</div>
 		</div>
 
