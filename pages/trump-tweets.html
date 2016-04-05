@@ -3,27 +3,28 @@
 <head>
 	<title>Trump or Hillary</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
-	<script type="text/javascript" src="js/twitterController.js"></script>
+	<script type="text/javascript" src="../js/twitterController.js"></script>
 
 </head>
-<body ng-controller="twitterController">
+<body ng-controller="trumpController">
 
 	<div id="twitter-wrapper" class="container">
 
 		<div id="header" class="row" style="background: #347695;" style="width: 100%;">
 
 			<div id="trump-pic" class="col-sm-3">
-				<a href="pages/trump-tweets.html" onclick="trumpTweets();"><img src="css/trump.jpeg"></a>
+				<img src="../css/trump.jpeg">
 			</div>
 
-			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>Hillary or the Donald.</h2></span>  Pick your Poison!  Here are tweets about each of the candidates.  Click the picture for tweets about the specific candidate.  <h2>Enjoy!</h2>
+			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>You've chose The Donald!</h2></span>
+			<h2>Enjoy!</h2>
 			</div>
 
-			<div id="hillary-pic" class="col-sm-3">
-				<a href="#"><img src="css/hillary2.jpeg"></a>
+			<div id="trump-pic2" class="col-sm-3">
+				<img src="../css/trump.jpeg">
 			</div>
 
 		</div>
