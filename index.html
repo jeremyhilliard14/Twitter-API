@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="twitterApp">
+<head>
+	<title>Trump or Hillary</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/twitterController.js"></script>
+
+</head>
+<body ng-controller="twitterController">
+
+	<div id="twitter-wrapper" class="container">
+
+		<div id="header" class="row" style="background: #57c6f9;" style="width: 100%;">
+
+			<div id="trump-pic" class="col-sm-3">
+				<a href="#"><img src="css/trump.jpeg"></a>
+			</div>
+
+			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>Hillary or the Donald.</h2></span>  Pick your Poison!  Here are tweets about each of the candidates.  Enjoy!
+			</div>
+
+			<div id="hillary-pic" class="col-sm-3">
+				<a href="#"><img src="css/hillary2.jpeg"></a>
+			</div>
+
+		</div>
+
+		<div id="more-tweets" class="row"></div>
+
+		<div id="tweets" class="row">
+			<div class="col-sm-12" ng-repeat="tweet in data">{{tweet.text}} -- {{tweet.user.name}} -- {{tweet.sinceTweeted}} in seconds
+				<img ng-src="{{tweet.user.profile_banner_url}}" />
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

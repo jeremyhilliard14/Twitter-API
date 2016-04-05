@@ -1,0 +1,19 @@
+#header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.container{
+
+}
+#header-info{
+	text-align: center;
+}
+#hillary-pic img{
+	height: 194px;
+	width: 259px;
+}
+#tweets img{
+	width:100%;
+	height: 250px;
+}
