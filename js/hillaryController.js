@@ -1,8 +1,8 @@
-twitterApp.controller('trumpController', function($scope, $http, $routeParams, $interval){
+twitterApp.controller('hillaryController', function($scope, $http, $routeParams, $interval){
 
 	
-	function trumpTweets(){
-		var url = 'http://digitalcrafts.com/students/twitter/hashtag.php?hash=trump';
+	function hillaryTweets(){
+		var url = 'http://digitalcrafts.com/students/twitter/hashtag.php?hash=hillary';
 		$http.get(url).success(function(data){
 			$scope.data=data.statuses;
 			for(i=0; i<$scope.data.length; i++){
