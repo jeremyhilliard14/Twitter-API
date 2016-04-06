@@ -37,3 +37,10 @@ body {
 	font-size: 25px;
 	color: white;
 }
+input{
+	margin-bottom: 25px;
+}
+button{
+	background-color: #79ffff;
+	color: black;
+}
