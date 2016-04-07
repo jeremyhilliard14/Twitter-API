@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/mainController.js"></script>
 	<script type="text/javascript" src="js/twitterController.js"></script>
+
 
 </head>
 <body ng-controller="twitterController">
@@ -17,14 +19,14 @@
 		<div id="header" class="row" style="background: #347695;" style="width: 100%;">
 
 			<div id="trump-pic" class="col-sm-3">
-				<a href="pages/trump-tweets.html" onclick="trumpTweets();"><img src="css/trump.jpeg"></a>
+				<a id="trump" href="#"><img src="css/trump.jpeg"></a>
 			</div>
 
 			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>Hillary or the Donald.</h2></span>  Pick your Poison!  Here are tweets about each of the candidates.  Click the picture for tweets about the specific candidate.  <h2>Enjoy!</h2>
 			</div>
 
 			<div id="hillary-pic" class="col-sm-3">
-				<a href="pages/hillary-tweets.html" onclick="hillaryTweets();"><img src="css/hillary2.jpeg"></a>
+				<a id="hillary" href="pages/hillary-tweets.html" onclick="hillaryTweets();"><img src="css/hillary2.jpeg"></a>
 			</div>
 
 		</div>
