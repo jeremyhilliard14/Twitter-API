@@ -44,3 +44,6 @@ button{
 	background-color: #79ffff;
 	color: black;
 }
+#trump-button, #hillary-button{
+	margin-left: 100px;
+}

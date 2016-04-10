@@ -1,7 +1,7 @@
 twitterApp.controller('trumpController', function($scope, $http, $routeParams, $interval){
 
 	
-	function trumpTweets(){
+	
 		var url = 'http://digitalcrafts.com/students/twitter/hashtag.php?hash=trump';
 		$http.get(url).success(function(data){
 			$scope.data=data.statuses;
@@ -20,6 +20,6 @@ twitterApp.controller('trumpController', function($scope, $http, $routeParams, $
 				};
 			}, 1000);
 		}
-	}
+	
 		//console.log(data.statuses);
-	});
+});

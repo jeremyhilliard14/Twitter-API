@@ -3,14 +3,16 @@
 		<div id="header" class="row" style="background: #347695;" style="width: 100%;">
 
 			<div id="trump-pic" class="col-sm-3">
-				<a href="/trump-tweets.html" onclick="trumpTweets();"><img src="css/trump.jpeg"></a>
+				<img src="css/trump.jpeg">
+				<button id="trump-button"  ng-click="go('/trump')">Trump</button>
 			</div>
 
-			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>Hillary or the Donald.</h2></span>  Pick your Poison!  Here are tweets about each of the candidates.  Click the picture for tweets about the specific candidate.  <h2>Enjoy!</h2>
+			<div id="header-info" class="col-sm-6 text-center"><span><h1>2016 Race for the White House</h1></span>  <span><h2>Hillary or the Donald.</h2></span>  Pick your Poison!  Here are tweets about the 2016 election.  Click the buttons for tweets about the specific candidate.  <h2>Enjoy!</h2>
 			</div>
 
 			<div id="hillary-pic" class="col-sm-3">
-				<a href="/hillary-tweets.html"><img src="css/hillary2.jpeg"></a>
+				<img src="css/hillary2.jpeg">
+				<button id="hillary-button"  ng-click="go('/hillary')">Hillary</button>
 			</div>
 
 		</div>

@@ -1,5 +1,8 @@
 var twitterApp = angular.module('twitterApp', ['ngRoute']);
 
+twitterApp.controller('mainController', function($routeProvider){
+
+});
 
 
 	twitterApp.config(function($routeProvider){
